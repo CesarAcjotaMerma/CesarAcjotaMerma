@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Portafolio</title>
+</head>
+<body>
+	<div class="cabecera">
+		<div class="contenedor-texto">
+			<div class="texto">
+				<h1 class="nombre"><b>CESAR ACJOTA </b><i class="fas fa-desktop" aria-hidden="true"></i></h1>
+				<h4 class="profesion">d e v e L o p e r</h4>
+			</div>
+		</div>
+		<div class="logo">
+			<img src="img/perfil.png" width="200" alt="Mi Portafolio"></img>
+		</div>
+	</div>
+	<div class="contenedor">
+		<br>
+		<header>
+			<h3>P E R F I L</h3>
+			<div class="presentacion">
+				<p>Hola mucho gusto, soy estudiante de la carrera de Diseño y Desarrollo de Software.
+					Me considero una persona proactiva, autodidacta, capaz de trabajar en equipo.
+					Con solidos conocimientos en la parte de fronted y desarrollo de Apps para Movil.
+				</p>
+			</div>
+			<br>
+			<hr style="color:#ffff">
+
+			<div id="barra-busqueda" class="form-outline mb-3">
+				<h3>P R O Y E C T O S</h3>
+			</div>
+			<div class="categorias" id="categorias">
+				<a class="badge rounded-pill bg-primary" href="#" class="activo">Todos</a>
+				<a class="badge rounded-pill bg-success" href="#">Desarrollo Web</a>
+				<a class="badge rounded-pill bg-danger" href="#">Desarrollo Movil</a>
+				<a class="badge rounded-pill bg-warning text-dark" href="#">API's</a>
+				<a class="badge rounded-pill bg-info text-dark" href="#">Diseño UI</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="desarrollo web"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/web1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo web"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo web"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo movil"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/movil.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo movil"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/animal2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="desarrollo movil"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="api's"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="api's"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="diseño ui"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/naturaleza1.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="far fa-times-circle"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+		<br>
+		<hr style="color:#ffff; border:15px;">
+		<br>
+
+		<h3>H A  B I L I D A D E S</h3>
+
+		<div class="contenedor-habilidades">
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/html5.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/css.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img width="85" src="icon/javascript.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img width="95" src="icon/github.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/java.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/python.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/vs.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/php.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/angular.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/vue.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/figma.ico" alt="">
+				</div>
+			</div>
+			<div class="habilidad">
+				<div class="thumb">
+					<img src="icon/kotlin.ico" alt="">
+				</div>
+			</div>
+		</div>
+		<br>
+		<hr style="color:#ffff; border:15px;">
+		<br>
+		<h3>M I__C V</h3>
+		<div class="CV" style="text-align: center">
+			<a type="button" class="btn btn-outline-info btn-lg" href="https://drive.google.com/file/d/1YBWERJlh3O_kvvxBagJBQ2cpipqIA-tI/view?usp=sharing">DESCARGAR CV</a>
+		</div>
+		
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white">
+		<!-- Grid container -->
+		<div id="icons" class="container p-4">
+		<!-- Section: Social media -->
+		<section id="socials" class="mb-4">
+			
+			<!-- Facebook -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/RasecAcMer/" role="button"><i class="fab fa-facebook-f"></i></a>
+			<!-- Instagram -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/rasec.acmer/" role="button"
+			><i class="fab fa-instagram"></i
+			></a>
+
+			<!-- Linkedin -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/cesaracjota/" role="button"
+			><i class="fab fa-linkedin-in"></i
+			></a>
+
+			<!-- Github -->
+			<a class="btn btn-outline-light btn-floating m-1" href="https://github.com/CesarAcjotaMerma" role="button"
+			><i class="fab fa-github"></i
+			></a>
+		</section>
+		
+		<!-- Copyright -->
+		<div class="text-center p-3">
+			Portafolio Desarollado Por
+		<a style="color:#42E2B8;" href="https://www.youtube.com/channel/UCPjAi3rgdFIBfFCyWy37v1w">Acjota Merma, Cesar</a>
+		</div>
+		<!-- Copyright -->
+		<span id="frase" class="badge rounded-pill bg-warning text-dark">¡Estudia, lo que más disfrutas hacer!</span>
+	</footer>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
