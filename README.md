@@ -1,4 +1,4 @@
-# Si tienes sueños por cumplir R E A L I Z A L O  
+# Si tienes sueños R E A L I Z A L O  
 ### [Tutorial: ]()
 
 
